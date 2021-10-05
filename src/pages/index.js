@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,6 +12,9 @@ import products from '@data/products.json';
 import styles from '@styles/Home.module.scss'
 
 export default function Home() {
+  // function handleOnSearch() {
+  //   // Do something here
+  // }
   return (
     <Layout>
       <Head>
