@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
 import Layout from '@components/Layout';
 import Header from '@components/Header';
@@ -21,7 +20,7 @@ export default function Product({ product }) {
       <Container>
         <div className={styles.productWrapper}>
           <div className={styles.productImage}>
-            <Image width="864" height="1200" src={product.image} alt={product.title} />
+            <img width="864" height="1200" src={product.image} alt={product.title} />
           </div>
           <div className={styles.productContent}>
             <h1>{ product.title }</h1>

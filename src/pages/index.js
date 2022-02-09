@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaShoppingCart } from 'react-icons/fa';
 
@@ -50,7 +49,7 @@ export default function Home() {
                 <Link href={`/products/${product.id}`}>
                   <a>
                     <div className={styles.productImage}>
-                      <Image width="864" height="1200" src={product.image} alt={product.title} />
+                      <img width="864" height="1200" src={product.image} alt={product.title} />
                     </div>
                     <h3 className={styles.productTitle}>
                       { product.title }
